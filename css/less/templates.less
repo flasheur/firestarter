@@ -1,0 +1,283 @@
+// ******************************
+//
+// 	HOME
+// 
+// ******************************
+.home {
+	
+	.section-title {
+		border-bottom: 1px solid white;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	
+	#home-hero-head {
+		
+		.wrapper {
+			margin-top: 80px;
+			background: #2d2d2d;
+		}
+		#site-introduction {
+			margin-top: 60px;
+			h3 {
+				color: @white;
+				font-family: @emphasized-title;
+				font-size: 22px;
+			}
+		}
+	}	
+	
+	#home-featured-works {
+		margin-bottom: @standard-margin;
+		
+		.wrapper {
+			background: @grayDarker;
+			height: 245px;
+			padding: 15px;
+		}
+		.work {
+			float: left;
+			margin-right: 35px;
+			position: relative;
+			
+			&.last { margin-right: 0; }
+			
+			.work-label {
+				background: #112433;
+				position: absolute;
+				bottom: -10px;
+				left: -10px;
+				padding: 10px;
+				
+				.work-title {
+					color: @white;
+					margin: 0;
+					font-family: @emphasized-title;
+					font-size: 20px;
+				}
+				.work-cat {
+					
+				}
+			}
+		}
+	}
+	
+	#homeCarousel {
+		background: #f7f3eb;
+		border: 1px solid @grayLighter;
+		.border-radius(5px);
+		padding: 20px 35px;
+		
+		h2 {
+			font-size: 22px;
+			font-weight: normal;
+			margin-bottom: 20px;
+			color: @red;
+		}
+		.item {
+			min-height: 175px;
+			
+			.entry-thumbnail  {
+				.image-border;
+			}
+			
+			h3 { margin-top: 25px; margin-bottom: 5px; color: @gray; }
+			
+			.description {
+				height: 125px;
+				font-size: 16px;
+				strong { color: @grayLight; }
+				li { line-height: 25px; }
+			}
+			
+			.more-info {
+				float: right;
+			}
+		}
+		.carousel-control {
+			width: 20px;
+			height: 50px;
+			&.left { left: 5px; }
+			&.right { right: 5px; }
+		}
+	}
+	
+	#homepage-blocks {
+		.left-container {
+			padding-left: 10px;
+		}
+		.right-container {
+			padding-right: 10px;
+		}
+	}
+	
+	#home-blog {
+		
+		.post {
+			background: none;
+			border: none;
+			margin-bottom: 10px;
+			display: inline-block;
+			
+			.post-title {
+				color: @white;
+				font-size: 16px;
+				margin-bottom: 5px;
+			}
+			.post-meta {
+				margin-bottom: 10px;
+				color: #c6c6c6;
+				
+				a { color: #c6c6c6; }
+				
+				i { margin-right: 5px; }
+				.separator { margin: 0 5px; }
+			}
+		}
+		
+		.post-separator {
+			border-bottom: 1px dotted @grayLight;
+			margin: 10px 0;
+		}
+		
+	}
+	
+}
+
+// ******************************
+//
+// 	POST
+// 
+// ******************************
+.post {
+	margin-bottom: 40px;
+	
+	.post-header {
+		.entry-title { 
+			margin-bottom: 10px; 
+			font-size: 25px;
+		}
+	}
+	.entry-meta {
+		margin: 10px 0 5px;
+		color: @black;
+		
+		span, .entry-date { margin: 0 0 0 10px; }
+		span.separator { margin: 0 10px; }
+	}
+	.entry-content {
+		
+	}
+	.entry-footer {
+		padding: 10px;
+		margin-top: @standard-margin;
+		border-left: 3px solid #ccc;
+		
+		.post-edit-link {
+			color: #fff;
+			float: right;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		span {
+			margin: 0 0 0 10px;
+			
+			&.separator {
+				margin: 0 10px;
+			}
+		}
+		a {
+			color: #666;
+			cursor: pointer;
+		}
+	}
+	.excerpt-more {
+		&:hover {
+			text-decoration: none;
+			color: @yellow;
+		}
+	}
+	.share-box {
+		display: inline-block;
+	
+		.fb-like,
+		.twitter-tweet {
+			float: left;
+			margin-right: 20px;
+		}
+	}	
+}
+
+// ******************************
+//
+// 	SINGLE
+// 
+// ******************************
+.single {
+	.entry-thumbnail {
+		margin-bottom: @standard-margin;
+	}
+	.related-posts {
+		.related-posts-title {
+			margin-bottom: 10px;
+		}
+		.post {
+			background: none;
+			padding: 0;
+			margin-bottom: @standard-margin;
+		}
+	}
+}
+
+// ******************************
+//
+// 	PAGE
+// 
+// ******************************
+.page {
+	.page-header {
+		margin-top: 0;
+		border: none;
+		margin-bottom: 0;
+	}
+	.entry-title {
+		margin-bottom: 10px;
+	}
+	.entry-footer {
+		padding: 10px;
+		
+		.post-edit-link {
+			color: #fff;
+			float: right;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// ******************************
+//
+// 	AUTHORS
+// 
+// ******************************
+.author {
+	#author-info {
+		margin-bottom: @standard-margin;
+	}
+}
+
+// ******************************
+//
+// 	ERROR 404
+// 
+// ******************************
+.error404 {
+	.post {
+		background: none;
+	}
+}

@@ -1,0 +1,64 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: @font;
+	font-size: @font-size;
+	line-height: 18px;
+	color: @font-color;
+}
+
+p {
+	margin: 0 0 9px;
+	font-family: @font;
+	font-size: @font-size;
+	line-height: 22px;
+}
+
+blockquote {
+	p {
+		font-size: @font-size;
+		font-style: italic;
+	}
+	&:hover {
+		background: #f0f0f0;
+	}
+}
+
+// links
+a {
+	color: @link-color;
+	text-decoration: none;
+	
+	&:focus,
+	&:active,
+	&:hover {
+		color: @link-color-hover;
+		text-decoration: underline;
+	}
+}
+
+// headings
+h1,h2,h3,h4,h5,h6 {
+	color: @grayDark;
+	margin-top: 0;
+	font-family: @font-title;
+	font-weight: 100;
+}
+
+h1 { font-size: 22px; line-height: 30px; }
+h2 { font-size: 22px; line-height: 30px; }
+h3 { font-size: 18px; line-height: 30px; }
+h4 { font-size: 15px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
+
+form {
+	
+	input[type="submit"] {
+		.button();
+	}
+}
+

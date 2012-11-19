@@ -1,0 +1,48 @@
+// pager
+.pager {
+	padding: 0 @standard-margin;
+}
+
+// WP-PageNavi
+.wp-pagenavi {
+	clear: both;
+	padding: 0 @standard-margin;
+	height: 36px;
+	margin: 18px 0;
+	display: inline-block;
+	.border-radius(3px);
+	
+	.pages {
+		width: auto;
+		border-left-width: 1px;
+	}
+	a, span {
+		text-decoration: none;
+		border: 1px solid #BFBFBF;
+		padding: 0 14px;
+		margin: 0 !important;
+		line-height: 34px;
+		border: 1px solid #ddd;
+		border-left-width: 0;
+		display: inline;
+		width: 7px;
+		float: left;
+		
+		&:first-child {
+			.border-radius(3px);
+		}	
+		&:last-child {
+			.border-radius(3px);
+		}	
+	}
+	a:hover, span.current {
+		border-color: #ddd;
+		background: #f5f5f5;
+	}
+	span.current {
+		font-weight: bold;
+	}
+	:first-child {
+		border-left-width: 1px;
+	}
+}

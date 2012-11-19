@@ -1,0 +1,73 @@
+#comments {
+	ol {list-style: none outside;}
+	.comment-meta {margin-bottom: 10px;}
+	.avatar {
+		float: left;
+		margin-right: @standard-margin;
+		margin-bottom: 10px;
+	}
+	.author {
+		padding: 0 0 0 100px;
+		margin-bottom: 10px;
+		
+		.fn {font-weight: bold;}
+	}
+	.comment-content {padding: 0 0 0 100px;}
+	.comment {
+		position: relative;
+		margin-top: @standard-margin;
+		margin-bottom: 20px;
+		
+		.reply {
+			padding: 0 0 0 100px;
+			a {
+				color: #fff;
+				
+				&:hover {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.children {
+		margin-left: @standard-margin;
+		
+		.avatar {margin-left: 10px;}
+		.author,
+		.comment-content,
+		.reply {padding-left: 80px;}
+	}
+}
+
+// ****************************** ***
+//
+// 	COMMENT FORM
+// 
+// ******************************
+#respond {
+	padding-top: @standard-margin;
+}
+
+#fancybox-content {
+	#respond {
+		
+		p.star span {
+			width: 80px;
+			height: 16px;
+			position: relative;
+			float: left;
+			background: url(../images/star.png) repeat-x left 0;
+			
+			a {
+				width: 16px;
+				z-index: 10;
+			}
+		}
+		
+		#comment {
+			width: 400px;
+		}
+		
+	}
+}

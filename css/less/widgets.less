@@ -1,0 +1,261 @@
+#secondary {
+	padding-top: 10px;
+	
+	a { color: @black; }
+}
+
+.widget-wrapper {
+	margin: 0;
+	padding: 0;
+	padding: 0px 10px;
+}
+
+.widget {
+	margin-bottom: 10px;
+	
+	.widget-title { margin-bottom: 5px; color: @black; }
+	
+	.widget-icon{
+		display: block;
+		.size(30px,30px);
+		float:left;
+	}
+}
+
+// Firestarter Actualité
+.firestarter_widget_actualite{
+	h3{
+		margin-left: 60px;
+		padding-top: 10px;
+	}
+	
+	ul{
+		margin: 10px 0 30px 0;
+		list-style: none;
+		
+		a { 
+			color: @grayLight; 
+			text-decoration: none;
+		}
+		
+		li{  margin: 0 0 10px 0; }
+	}
+	span { color: @green; }
+}
+
+//Firestarter Articles les plus lus
+.widget_firestarter_widget_articles_les_plus_lus {
+	.widget-icon{
+		.size(38px,37px);
+		background-position: -249px -119px;
+	}
+	
+	.widget-icon-dot{
+		width: 11px;
+		height: 11px;
+		background-image: url(../../images/icn_puce_rouge.png);
+	}
+	
+	a { color: @grayLight; }
+	
+	h3{
+		margin-left: 55px;
+		padding-top: 10px;
+	}
+	
+	ul{
+		margin: 10px 0 0 0;
+		list-style: none;
+		
+		li { margin: 0 0 10px 0; }
+	}
+	
+	span{ color: @green; }
+}
+
+
+// Firestarter latest posts widget & Firestarter latest comments widget
+.firestarter_widget_latest_posts,
+.firestarter_widget_latest_comments,
+.firestarter_widget_latest_activity {
+	.list {
+		margin: 0;
+		padding: 0;
+		list-style: none outside;
+		
+		li {
+			border-bottom: 1px solid #eee;
+			padding: 5px;
+			margin: 0;
+		}
+	}
+	.thumbnail {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 0;
+		border: 1px solid #eee;
+		display: block;
+		height: 50px;
+		width: 50px;
+	}
+	.title {
+		display: block;
+		font-weight: bold;
+	}
+}
+		
+// Firestarter social medias widget
+.firestarter_widget_social_media {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none outside;			
+		
+		li {
+			a {
+				display: block;
+				width: 32px;
+				height: 32px;
+				float: left;
+				margin-right: 3px;
+				background-image: url(../../images/social_icns.png);
+				background-repeat: no-repeat;
+				overflow: hidden;
+				text-indent: -9999px;
+				
+				&.white {
+					background-image: url(../../images/social_icns_white.png);
+				}
+			}
+			&.behance a {
+				background-position: -129px -86px;
+			}
+			&.facebook a {
+				background-position: -86px -86px;
+			}
+			&.googleplus a {
+				background-position: -0px -0px;
+			}
+			&.instagram a {
+				background-position: -43px -86px;
+			}
+			&.linkedin a {
+				background-position: -0px -86px;
+			}
+			&.mail a {
+				background-position: -129px -43px;
+			}
+			&.pinterest a {
+				background-position: -86px -43px;
+			}
+			&.feedrss a {
+				background-position: -43px -43px;
+			}
+			&.skype a {
+				background-position: -0px -43px;
+			}
+			&.tumblr a {
+				background-position: -129px -0px;
+			}
+			&.twitter a {
+				background-position: -86px -0px;
+			}
+			&.vimeo a {
+				background-position: -43px -0px;
+			}
+		}
+	}
+}
+
+// Firestarter ads 125x125 widget
+.widget_firestarter_widget_ads_125x125 {
+	img {
+		margin: 2px 2px;
+	}
+}
+
+// Firestarter ads 300x250 widget
+.widget_firestarter_widget_ads_300x250 {
+	
+}
+
+// Firestarter Youtube favorites widget
+.widget_firestarter_widget_youtube_favorites {
+	img { margin: 0 10px 10px 0; }
+	.youtube-more-link {
+		display: block;
+		width: 120px;
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+		
+		&:hover { background: #eee; }
+	}
+}
+
+// JigoShop cart list
+.jigoshop_cart {
+	
+	padding: 0 40px 0 0;
+	
+	.cart_list {
+		list-style: none outside;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			clear: both;
+			margin-bottom: 10px;
+		}
+		
+		img {
+			border: 1px solid #ccc;
+			padding: 4px;
+			float: left;
+			margin-right: 10px;
+		}
+		
+		span { display: block; }
+	}
+	
+	.total {
+		border-top: 1px solid #ccc;
+		margin-bottom: 20px;
+	}
+	
+	.buttons a {
+		.button;
+		margin-right: 10px;
+	}	
+}
+
+// Login
+.widget_firestarter_widget_login {
+	
+	#rememberme {
+		float:left;
+		margin-right: 10px;
+	}
+}
+
+// Breaking news
+.firestarter_widget_breaking_news {
+	
+	.list {
+		position: relative;
+		
+		li {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			
+			h4 {
+				display: block;
+				height: 60px;
+				background: #f00;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+	}
+}
